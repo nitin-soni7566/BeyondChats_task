@@ -38,6 +38,8 @@ def get_citation_api():
 
                 if source["link"] != "":
                     citations.append({"id": source["id"], "link": source["link"]})
+                else:
+                    continue
 
         print(f"page_no: {page_data['data']['current_page']} fetched")
         page_no += 1
